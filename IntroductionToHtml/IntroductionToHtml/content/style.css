@@ -1,0 +1,23 @@
+body{
+    background-color: cornsilk;
+}
+
+.tbl-emp{
+    border: 1px black solid;
+    margin:100px;
+}
+
+.tbl-emp tr{
+    border:1px black solid;
+}
+
+.tbl-emp td{
+    border: 1px black solid;
+    width: 150px;
+    padding: 5px;
+    
+}
+.td-heading{
+    font-weight: bold;
+    text-align: center;
+}
