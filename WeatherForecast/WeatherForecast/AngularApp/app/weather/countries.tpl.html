@@ -1,0 +1,17 @@
+﻿<div ng-controller="temperatureCtrl">
+    <table class="table table-striped">
+        <tr>
+            <th>Country</th>
+            <th>Month</th>
+            <th>Temperature</th>
+            <th><input type="text" class="form-control"
+                        placeholder="Search Country"
+                       ng-model="searchCountry" /></th>
+        </tr>
+        <tr ng-repeat="country in countriesTemp|filter:{Name:searchCountry}">
+            <td>{{country.Name|uppercase}}</td>
+            <td>{{country.Month|lowercase}}</td>
+            <td>{{country.Temperature}}</td>
+        </tr>
+    </table>
+</div>
